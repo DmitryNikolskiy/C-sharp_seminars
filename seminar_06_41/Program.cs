@@ -1,12 +1,12 @@
-﻿void Fill(double[] massive1, int num)
+﻿void Fill(int[] massive1, int num)
 {
     for (int i = 0; i < num; i++)
     {
         Console.Write($"Введите число номер {i+1}: ");
-        massive1[i] = Convert.ToDouble(Console.ReadLine());
+        massive1[i] = Convert.ToInt32(Console.ReadLine());
     }
 }
-void Print(double[] massive2, int numpr)
+void Print(int[] massive2, int numpr)
 {
         for (int j = 0; j < numpr-1; j++)
     {
@@ -23,13 +23,13 @@ if (number < 1)
 else
 {
     Console.WriteLine();
-    double[] array = new double[number];
+    int[] array = new int[number];
     Fill(array, number);
     Console.WriteLine("Вы ввели числа: ");
     Print(array, number);
     Console.WriteLine();
     int index = 0;
-    for (int k = 1; k < number; k++)
+    for (int k = 0; k < number; k++)
     {
         if (array[k] > 0) { index++; }
     }
