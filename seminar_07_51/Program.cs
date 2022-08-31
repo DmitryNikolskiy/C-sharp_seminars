@@ -8,9 +8,9 @@
             }
     }
 }
-void Print(int[,] massive2, int m2, int n2, int sum2)
+void Print(int[,] massive2, int m2, int n2)
 {
-    sum2 = 0;
+    int sum2 = 0;
     for (int k = 0; k < m2; k++)
     {
         for (int l = 0; l < n2; l++)
@@ -34,7 +34,6 @@ if (m < 1 || n < 1)
 else
 {
 int[,] array = new int[m,n];
-int sum = 0;
 Fill(array, m, n);
-Print(array, m, n, sum);
+Print(array, m, n);
 }
