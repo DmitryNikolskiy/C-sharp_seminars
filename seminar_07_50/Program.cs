@@ -4,7 +4,7 @@
     {
             for (int j = 0; j < n1; j++)
             {
-                massive1[i,j] = new Random().Next (1, 100);
+                massive1[i,j] = new Random().Next (1, 10);
             }
     }
 }
