@@ -23,7 +23,7 @@ Console.WriteLine("Введите число строк для массива");
 int m = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите число столбцов для массива");
 int n = Convert.ToInt32(Console.ReadLine());
-if (m < 1 && n < 1)
+if (m < 1 || n < 1)
 {
     Console.WriteLine("Число строк и столбцов болжно быть больше 1, попробуйте езе раз");
 }
