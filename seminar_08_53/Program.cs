@@ -19,7 +19,7 @@ void Print(int[,] massive2, int m2, int n2)
         Console.WriteLine();
     }
 }
-void ChengeRows(int[,] massive3, int m3, int n3)
+void ChangeRows(int[,] massive3, int m3, int n3)
 {
     int temp = 0;
     for (int p = 0; p < m3; p++)
@@ -50,6 +50,6 @@ Fill(array, m, n);
 Print(array, m, n);
 Console.WriteLine();
 Console.WriteLine("Новый массив:");
-ChengeRows(array, m, n);
+ChangeRows(array, m, n);
 Print(array, m, n);
 }
